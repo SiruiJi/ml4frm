@@ -86,7 +86,7 @@ def training_model(X_train, X_test, y_train, y_test):
 
 
 if __name__ == '__main__':
-    file_path = 'D:/PyCharm Community Edition 2023.1.2/Python_Project/Finance/ml4frm/german_credit_data.csv'
+    file_path = 'german_credit_data.csv'
     credit_ = read_original_files(file_path)
     numerical_credit_, scaled_credit_, dummies_credit_, combined_credit_ = data_conversion(credit_)
     X_train_, X_test_, y_train_, y_test_ = data_preparation(combined_credit_)
